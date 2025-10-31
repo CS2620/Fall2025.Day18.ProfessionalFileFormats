@@ -13,11 +13,17 @@ The following string can be encoded with Huffman encoding as follows:
 big bad bob [ignore the spaces]
 
 Frequency chart:
+
 b: 4
+
 i: 1
+
 g: 1
+
 a: 1
+
 d: 1
+
 o: 1
 
 This generates the following tree:
@@ -37,11 +43,17 @@ graph TD
 ```
 
 By following this tree you can determine the bits assigned to each character:
+
 b: 0
+
 i: 110
+
 g: 1111
+
 a: 1110
+
 d: 101
+
 o: 100
 
 With 6 characters, we could encode this (without Huffman encoding) with 3 bit for each character. This results in 9*3=27 bits. Using the Humman encoding, we get (b)4*1+(i)1*3+(g)1*4+(a)1*4+(d)1*3+(o)1*3=4+3+4+4+3+3=21 bits.
